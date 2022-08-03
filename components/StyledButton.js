@@ -12,7 +12,7 @@ app.component("styled-button", {
     template: /*html*/ `
       <button 
         type="button" 
-        class="styled-button font-18 weight-400"
+        class="styled-button font-14 weight-400"
         :style="{ marginBottom: bottom }"
       >
         {{ msg }}
