@@ -1,0 +1,200 @@
+$breakpoints: 280, 320, 375, 390, 412, 425, 768;
+
+.influence {
+  padding-bottom: 36px;
+  &-title {
+    line-height: 42px;
+
+    &.y-8 {
+      margin-top: 25px;
+      margin-bottom: 14px;
+    }
+
+    &.y-10 {
+      margin-top: 49px;
+      margin-bottom: 13px;
+    }
+  }
+
+  &-card-media {
+    width: 100%;
+    height: 291px;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: auto;
+    margin-bottom: 1px;
+
+    &-img {
+      width: 100%;
+      height: 216px;
+
+      img {
+        object-fit: cover;
+        min-height: 100%;
+      }
+    }
+
+    &-label {
+      background-color: var(--vn-primary-bold);
+      padding: 5px 9px;
+      width: 100%;
+      height: calc(100% - 216px);
+      display: block;
+    }
+
+    &-note {
+      top: 190px;
+      left: 50%;
+      transform: translate(-50%, 0);
+      white-space: nowrap;
+    }
+
+    &-no-img {
+      width: 100%;
+      height: 212px;
+      display: flex;
+      border-radius: 8px;
+      margin: auto;
+      margin-bottom: 28px;
+
+      &-note {
+        white-space: nowrap;
+        bottom: -28px;
+        left: 50%;
+        transform: translate(-50%, 0);
+      }
+
+      &-section {
+        width: 50%;
+
+        &:nth-child(2) {
+          border-top-left-radius: 8px;
+          border-bottom-left-radius: 8px;
+        }
+
+        &:nth-child(3) {
+          border-top-right-radius: 8px;
+          border-bottom-right-radius: 8px;
+        }
+
+        &-title {
+          margin-top: 30px;
+          // margin: auto;
+          margin-bottom: 12px;
+        }
+
+        &-img {
+          width: 100%;
+          height: 72px;
+
+          img { 
+            object-fit: cover;
+            min-width: 100%;
+          }
+        }
+
+        .influences-list {
+          list-style-type: none;
+          padding: 0;
+          margin: 0;
+
+          &-item {
+            display: flex;
+            align-items: center;
+
+            &:not(:last-child) {
+              margin-bottom: 12px;
+            }
+
+            &-icon {
+              min-width: 24px;
+              aspect-ratio: 1 / 1;
+              margin-right: 3px;
+
+              img {
+                min-height: 100%;
+                object-fit: cover;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@each $breakpoint in $breakpoints {
+  @media (min-width: #{$breakpoint}px) {
+    .influence {
+      padding-bottom: calc(36px * #{$breakpoint} / 375);
+      &-title {
+        line-height: calc(42px * #{$breakpoint} / 375);
+
+        &.y-8 {
+          margin-top: calc(25px * #{$breakpoint} / 375);
+          margin-bottom: calc(14px * #{$breakpoint} / 375);
+        }
+
+        &.y-10 {
+          margin-top: calc(49px * #{$breakpoint} / 375);
+          margin-bottom: calc(13px * #{$breakpoint} / 375);
+        }
+      }
+
+      &-card-media {
+        height: calc(291px * #{$breakpoint} / 375);
+        margin-bottom: calc(1px * #{$breakpoint} / 375);
+
+        &-img {
+          height: calc(216px * #{$breakpoint} / 375);
+        }
+
+        &-label {
+          padding: calc(5px * #{$breakpoint} / 375)
+            calc(9px * #{$breakpoint} / 375);
+          height: calc(100% - 216px * #{$breakpoint} / 375);
+        }
+
+        &-note {
+          top: calc(190px * #{$breakpoint} / 375);
+        }
+
+        &-no-img {
+          height: calc(212px * #{$breakpoint} / 375);
+          margin-bottom: calc(28px * #{$breakpoint} / 375);
+
+          &-note {
+            bottom: calc(-28px * #{$breakpoint} / 375);
+          }
+
+          &-section {
+            &-title {
+              margin-top: calc(30px * #{$breakpoint} / 375);
+              // margin: auto;
+              margin-bottom: calc(12px * #{$breakpoint} / 375);
+            }
+
+            &-img {
+              width: 100%;
+              height: calc(72px * #{$breakpoint} / 375);
+            }
+    
+
+            .influences-list {
+              &-item {
+                &:not(:last-child) {
+                  margin-bottom: calc(12px * #{$breakpoint} / 375);
+                }
+
+                &-icon {
+                  min-width: calc(24px * #{$breakpoint} / 375);
+                  margin-right: calc(3px * #{$breakpoint} / 375);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

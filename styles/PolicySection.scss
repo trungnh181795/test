@@ -1,0 +1,83 @@
+$breakpoints: 280, 320, 375, 390, 412, 425, 768;
+
+.policy {
+    &-title {
+        margin-top: 36px;
+        margin-bottom: 6px;
+    }
+
+    &-list {
+        list-style-type: none;
+        padding: 0;
+        margin-top: 15px;
+        margin-bottom: 35px;
+
+        &-item {
+            display: flex;
+            background-color: var(--vn-blue);
+            overflow: hidden;
+            border-radius: 8px;
+            border: 2px solid #C8DAEE;
+            width: 100%;
+            height: 170px;
+            
+            &:not(:last-child) {
+                margin-bottom: 32px;
+            }
+
+            &-img {
+                border-radius: 8px;
+                overflow: hidden;
+                width: 152px;
+                height: 100%;
+
+                img {
+                    min-width: 100%;
+                }
+            }
+
+            &-content {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                width: calc(100% - 152px);
+                height: 100%;
+                padding: 30px 11px 16px 11px;
+            }
+        }
+    }
+}
+
+@each $breakpoint in $breakpoints {
+    @media (min-width: #{$breakpoint}px) {
+        .policy {
+            &-title {
+                margin-top: calc(36px * #{$breakpoint} / 375);
+                margin-bottom: calc(6px * #{$breakpoint} / 375);
+            }
+        
+            &-list {
+                margin-top: calc(15px * #{$breakpoint} / 375);
+                margin-bottom: calc(35px * #{$breakpoint} / 375);
+        
+                &-item {
+                    height: calc(170px * #{$breakpoint} / 375);
+                    
+                    &:not(:last-child) {
+                        margin-bottom: calc(32px * #{$breakpoint} / 375);
+                    }
+        
+                    &-img {
+                        width: calc(152px * #{$breakpoint} / 375);
+                    }
+        
+                    &-content {
+                        width: calc(100% - 152px * #{$breakpoint} / 375);
+                        padding: calc(30px * #{$breakpoint} / 375) calc(11px * #{$breakpoint} / 375) calc(16px * #{$breakpoint} / 375) calc(11px * #{$breakpoint} / 375);
+                    }
+                }
+            }
+        }
+    }
+  }

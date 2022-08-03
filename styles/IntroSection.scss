@@ -1,0 +1,39 @@
+$breakpoints: 280, 320, 375, 390, 412, 425, 768;
+
+.intro {
+    &-sub-title {
+      width: 304px;
+      height: 76px;
+      background-image: url(../assets/images/ru-giac-ngu-em.png);
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+      margin-bottom: 32px;
+      margin: auto;
+    }
+    
+    &-background {
+      width: 100%;
+      height: 472px;
+      background-image: url(../assets/images/foam-1.png);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+
+  @each $breakpoint in $breakpoints {
+    @media (min-width: #{$breakpoint}px) {
+      .intro {
+        &-sub-title {
+          width: calc(304px * #{$breakpoint} / 375);
+          height: calc(76px * #{$breakpoint} / 375);
+          margin-bottom: calc(32px * #{$breakpoint} / 375);
+        }
+        
+        &-background {
+          height: calc(472px * #{$breakpoint} / 375);
+        }
+      }
+    }
+  }

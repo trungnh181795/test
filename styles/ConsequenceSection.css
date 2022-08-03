@@ -1,0 +1,71 @@
+.consequence {
+  padding-bottom: 48px;
+}
+.consequence-title {
+  margin-top: 32px;
+  margin-bottom: 21px;
+}
+
+@media (min-width: 280px) {
+  .consequence {
+    padding-bottom: calc(48px * 280 / 375);
+  }
+  .consequence-title {
+    margin-top: calc(32px * 280 / 375);
+    margin-bottom: calc(21px * 280 / 375);
+  }
+}
+@media (min-width: 320px) {
+  .consequence {
+    padding-bottom: calc(48px * 320 / 375);
+  }
+  .consequence-title {
+    margin-top: calc(32px * 320 / 375);
+    margin-bottom: calc(21px * 320 / 375);
+  }
+}
+@media (min-width: 375px) {
+  .consequence {
+    padding-bottom: calc(48px * 375 / 375);
+  }
+  .consequence-title {
+    margin-top: calc(32px * 375 / 375);
+    margin-bottom: calc(21px * 375 / 375);
+  }
+}
+@media (min-width: 390px) {
+  .consequence {
+    padding-bottom: calc(48px * 390 / 375);
+  }
+  .consequence-title {
+    margin-top: calc(32px * 390 / 375);
+    margin-bottom: calc(21px * 390 / 375);
+  }
+}
+@media (min-width: 412px) {
+  .consequence {
+    padding-bottom: calc(48px * 412 / 375);
+  }
+  .consequence-title {
+    margin-top: calc(32px * 412 / 375);
+    margin-bottom: calc(21px * 412 / 375);
+  }
+}
+@media (min-width: 425px) {
+  .consequence {
+    padding-bottom: calc(48px * 425 / 375);
+  }
+  .consequence-title {
+    margin-top: calc(32px * 425 / 375);
+    margin-bottom: calc(21px * 425 / 375);
+  }
+}
+@media (min-width: 768px) {
+  .consequence {
+    padding-bottom: calc(48px * 768 / 375);
+  }
+  .consequence-title {
+    margin-top: calc(32px * 768 / 375);
+    margin-bottom: calc(21px * 768 / 375);
+  }
+}/*# sourceMappingURL=ConsequenceSection.css.map */

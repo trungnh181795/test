@@ -1,0 +1,46 @@
+$breakpoints: 280, 320, 375, 390, 412, 425, 768;
+
+.form {
+  &-instruction {
+    margin-top: 48px;
+    margin-bottom: 47px;
+
+    &-title {
+      position: relative;
+      margin-bottom: 35px;
+
+      &::after {
+        position: absolute;
+        content: " ";
+        width: 120px;
+        height: 2px;
+        background-color: var(--vn-white);
+        bottom: -5px;
+        left: 50%;
+        transform: translate(-50%, 0);
+      }
+    }
+  }
+
+}
+
+@each $breakpoint in $breakpoints {
+  @media (min-width: #{$breakpoint}px) {
+    .form {
+      &-instruction {
+        margin-top: calc(48px * #{$breakpoint} / 375);
+        margin-bottom: calc(47px * #{$breakpoint} / 375);
+    
+        &-title {
+          margin-bottom: calc(35px * #{$breakpoint} / 375);
+    
+          &::after {
+            width: calc(120px * #{$breakpoint} / 375);
+            height: calc(2px * #{$breakpoint} / 375);
+          }
+        }
+      }
+    
+    }
+  }
+}

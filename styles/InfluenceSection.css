@@ -1,0 +1,469 @@
+.influence {
+  padding-bottom: 36px;
+}
+.influence-title {
+  line-height: 42px;
+}
+.influence-title.y-8 {
+  margin-top: 25px;
+  margin-bottom: 14px;
+}
+.influence-title.y-10 {
+  margin-top: 49px;
+  margin-bottom: 13px;
+}
+.influence-card-media {
+  width: 100%;
+  height: 291px;
+  border-radius: 8px;
+  overflow: hidden;
+  margin: auto;
+  margin-bottom: 1px;
+}
+.influence-card-media-img {
+  width: 100%;
+  height: 216px;
+}
+.influence-card-media-img img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  min-height: 100%;
+}
+.influence-card-media-label {
+  background-color: var(--vn-primary-bold);
+  padding: 5px 9px;
+  width: 100%;
+  height: calc(100% - 216px);
+  display: block;
+}
+.influence-card-media-note {
+  top: 190px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  white-space: nowrap;
+}
+.influence-card-media-no-img {
+  width: 100%;
+  height: 212px;
+  display: flex;
+  border-radius: 8px;
+  margin: auto;
+  margin-bottom: 28px;
+}
+.influence-card-media-no-img-note {
+  white-space: nowrap;
+  bottom: -28px;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+.influence-card-media-no-img-section {
+  width: 50%;
+}
+.influence-card-media-no-img-section:nth-child(2) {
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+.influence-card-media-no-img-section:nth-child(3) {
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+.influence-card-media-no-img-section-title {
+  margin-top: 30px;
+  margin-bottom: 12px;
+}
+.influence-card-media-no-img-section-img {
+  width: 100%;
+  height: 72px;
+}
+.influence-card-media-no-img-section-img img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  min-width: 100%;
+}
+.influence-card-media-no-img-section .influences-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.influence-card-media-no-img-section .influences-list-item {
+  display: flex;
+  align-items: center;
+}
+.influence-card-media-no-img-section .influences-list-item:not(:last-child) {
+  margin-bottom: 12px;
+}
+.influence-card-media-no-img-section .influences-list-item-icon {
+  min-width: 24px;
+  aspect-ratio: 1/1;
+  margin-right: 3px;
+}
+.influence-card-media-no-img-section .influences-list-item-icon img {
+  min-height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media (min-width: 280px) {
+  .influence {
+    padding-bottom: calc(36px * 280 / 375);
+  }
+  .influence-title {
+    line-height: calc(42px * 280 / 375);
+  }
+  .influence-title.y-8 {
+    margin-top: calc(25px * 280 / 375);
+    margin-bottom: calc(14px * 280 / 375);
+  }
+  .influence-title.y-10 {
+    margin-top: calc(49px * 280 / 375);
+    margin-bottom: calc(13px * 280 / 375);
+  }
+  .influence-card-media {
+    height: calc(291px * 280 / 375);
+    margin-bottom: calc(1px * 280 / 375);
+  }
+  .influence-card-media-img {
+    height: calc(216px * 280 / 375);
+  }
+  .influence-card-media-label {
+    padding: calc(5px * 280 / 375) calc(9px * 280 / 375);
+    height: calc(100% - 216px * 280 / 375);
+  }
+  .influence-card-media-note {
+    top: calc(190px * 280 / 375);
+  }
+  .influence-card-media-no-img {
+    height: calc(212px * 280 / 375);
+    margin-bottom: calc(28px * 280 / 375);
+  }
+  .influence-card-media-no-img-note {
+    bottom: calc(-28px * 280 / 375);
+  }
+  .influence-card-media-no-img-section-title {
+    margin-top: calc(30px * 280 / 375);
+    margin-bottom: calc(12px * 280 / 375);
+  }
+  .influence-card-media-no-img-section-img {
+    width: 100%;
+    height: calc(72px * 280 / 375);
+  }
+  .influence-card-media-no-img-section .influences-list-item:not(:last-child) {
+    margin-bottom: calc(12px * 280 / 375);
+  }
+  .influence-card-media-no-img-section .influences-list-item-icon {
+    min-width: calc(24px * 280 / 375);
+    margin-right: calc(3px * 280 / 375);
+  }
+}
+@media (min-width: 320px) {
+  .influence {
+    padding-bottom: calc(36px * 320 / 375);
+  }
+  .influence-title {
+    line-height: calc(42px * 320 / 375);
+  }
+  .influence-title.y-8 {
+    margin-top: calc(25px * 320 / 375);
+    margin-bottom: calc(14px * 320 / 375);
+  }
+  .influence-title.y-10 {
+    margin-top: calc(49px * 320 / 375);
+    margin-bottom: calc(13px * 320 / 375);
+  }
+  .influence-card-media {
+    height: calc(291px * 320 / 375);
+    margin-bottom: calc(1px * 320 / 375);
+  }
+  .influence-card-media-img {
+    height: calc(216px * 320 / 375);
+  }
+  .influence-card-media-label {
+    padding: calc(5px * 320 / 375) calc(9px * 320 / 375);
+    height: calc(100% - 216px * 320 / 375);
+  }
+  .influence-card-media-note {
+    top: calc(190px * 320 / 375);
+  }
+  .influence-card-media-no-img {
+    height: calc(212px * 320 / 375);
+    margin-bottom: calc(28px * 320 / 375);
+  }
+  .influence-card-media-no-img-note {
+    bottom: calc(-28px * 320 / 375);
+  }
+  .influence-card-media-no-img-section-title {
+    margin-top: calc(30px * 320 / 375);
+    margin-bottom: calc(12px * 320 / 375);
+  }
+  .influence-card-media-no-img-section-img {
+    width: 100%;
+    height: calc(72px * 320 / 375);
+  }
+  .influence-card-media-no-img-section .influences-list-item:not(:last-child) {
+    margin-bottom: calc(12px * 320 / 375);
+  }
+  .influence-card-media-no-img-section .influences-list-item-icon {
+    min-width: calc(24px * 320 / 375);
+    margin-right: calc(3px * 320 / 375);
+  }
+}
+@media (min-width: 375px) {
+  .influence {
+    padding-bottom: calc(36px * 375 / 375);
+  }
+  .influence-title {
+    line-height: calc(42px * 375 / 375);
+  }
+  .influence-title.y-8 {
+    margin-top: calc(25px * 375 / 375);
+    margin-bottom: calc(14px * 375 / 375);
+  }
+  .influence-title.y-10 {
+    margin-top: calc(49px * 375 / 375);
+    margin-bottom: calc(13px * 375 / 375);
+  }
+  .influence-card-media {
+    height: calc(291px * 375 / 375);
+    margin-bottom: calc(1px * 375 / 375);
+  }
+  .influence-card-media-img {
+    height: calc(216px * 375 / 375);
+  }
+  .influence-card-media-label {
+    padding: calc(5px * 375 / 375) calc(9px * 375 / 375);
+    height: calc(100% - 216px * 375 / 375);
+  }
+  .influence-card-media-note {
+    top: calc(190px * 375 / 375);
+  }
+  .influence-card-media-no-img {
+    height: calc(212px * 375 / 375);
+    margin-bottom: calc(28px * 375 / 375);
+  }
+  .influence-card-media-no-img-note {
+    bottom: calc(-28px * 375 / 375);
+  }
+  .influence-card-media-no-img-section-title {
+    margin-top: calc(30px * 375 / 375);
+    margin-bottom: calc(12px * 375 / 375);
+  }
+  .influence-card-media-no-img-section-img {
+    width: 100%;
+    height: calc(72px * 375 / 375);
+  }
+  .influence-card-media-no-img-section .influences-list-item:not(:last-child) {
+    margin-bottom: calc(12px * 375 / 375);
+  }
+  .influence-card-media-no-img-section .influences-list-item-icon {
+    min-width: calc(24px * 375 / 375);
+    margin-right: calc(3px * 375 / 375);
+  }
+}
+@media (min-width: 390px) {
+  .influence {
+    padding-bottom: calc(36px * 390 / 375);
+  }
+  .influence-title {
+    line-height: calc(42px * 390 / 375);
+  }
+  .influence-title.y-8 {
+    margin-top: calc(25px * 390 / 375);
+    margin-bottom: calc(14px * 390 / 375);
+  }
+  .influence-title.y-10 {
+    margin-top: calc(49px * 390 / 375);
+    margin-bottom: calc(13px * 390 / 375);
+  }
+  .influence-card-media {
+    height: calc(291px * 390 / 375);
+    margin-bottom: calc(1px * 390 / 375);
+  }
+  .influence-card-media-img {
+    height: calc(216px * 390 / 375);
+  }
+  .influence-card-media-label {
+    padding: calc(5px * 390 / 375) calc(9px * 390 / 375);
+    height: calc(100% - 216px * 390 / 375);
+  }
+  .influence-card-media-note {
+    top: calc(190px * 390 / 375);
+  }
+  .influence-card-media-no-img {
+    height: calc(212px * 390 / 375);
+    margin-bottom: calc(28px * 390 / 375);
+  }
+  .influence-card-media-no-img-note {
+    bottom: calc(-28px * 390 / 375);
+  }
+  .influence-card-media-no-img-section-title {
+    margin-top: calc(30px * 390 / 375);
+    margin-bottom: calc(12px * 390 / 375);
+  }
+  .influence-card-media-no-img-section-img {
+    width: 100%;
+    height: calc(72px * 390 / 375);
+  }
+  .influence-card-media-no-img-section .influences-list-item:not(:last-child) {
+    margin-bottom: calc(12px * 390 / 375);
+  }
+  .influence-card-media-no-img-section .influences-list-item-icon {
+    min-width: calc(24px * 390 / 375);
+    margin-right: calc(3px * 390 / 375);
+  }
+}
+@media (min-width: 412px) {
+  .influence {
+    padding-bottom: calc(36px * 412 / 375);
+  }
+  .influence-title {
+    line-height: calc(42px * 412 / 375);
+  }
+  .influence-title.y-8 {
+    margin-top: calc(25px * 412 / 375);
+    margin-bottom: calc(14px * 412 / 375);
+  }
+  .influence-title.y-10 {
+    margin-top: calc(49px * 412 / 375);
+    margin-bottom: calc(13px * 412 / 375);
+  }
+  .influence-card-media {
+    height: calc(291px * 412 / 375);
+    margin-bottom: calc(1px * 412 / 375);
+  }
+  .influence-card-media-img {
+    height: calc(216px * 412 / 375);
+  }
+  .influence-card-media-label {
+    padding: calc(5px * 412 / 375) calc(9px * 412 / 375);
+    height: calc(100% - 216px * 412 / 375);
+  }
+  .influence-card-media-note {
+    top: calc(190px * 412 / 375);
+  }
+  .influence-card-media-no-img {
+    height: calc(212px * 412 / 375);
+    margin-bottom: calc(28px * 412 / 375);
+  }
+  .influence-card-media-no-img-note {
+    bottom: calc(-28px * 412 / 375);
+  }
+  .influence-card-media-no-img-section-title {
+    margin-top: calc(30px * 412 / 375);
+    margin-bottom: calc(12px * 412 / 375);
+  }
+  .influence-card-media-no-img-section-img {
+    width: 100%;
+    height: calc(72px * 412 / 375);
+  }
+  .influence-card-media-no-img-section .influences-list-item:not(:last-child) {
+    margin-bottom: calc(12px * 412 / 375);
+  }
+  .influence-card-media-no-img-section .influences-list-item-icon {
+    min-width: calc(24px * 412 / 375);
+    margin-right: calc(3px * 412 / 375);
+  }
+}
+@media (min-width: 425px) {
+  .influence {
+    padding-bottom: calc(36px * 425 / 375);
+  }
+  .influence-title {
+    line-height: calc(42px * 425 / 375);
+  }
+  .influence-title.y-8 {
+    margin-top: calc(25px * 425 / 375);
+    margin-bottom: calc(14px * 425 / 375);
+  }
+  .influence-title.y-10 {
+    margin-top: calc(49px * 425 / 375);
+    margin-bottom: calc(13px * 425 / 375);
+  }
+  .influence-card-media {
+    height: calc(291px * 425 / 375);
+    margin-bottom: calc(1px * 425 / 375);
+  }
+  .influence-card-media-img {
+    height: calc(216px * 425 / 375);
+  }
+  .influence-card-media-label {
+    padding: calc(5px * 425 / 375) calc(9px * 425 / 375);
+    height: calc(100% - 216px * 425 / 375);
+  }
+  .influence-card-media-note {
+    top: calc(190px * 425 / 375);
+  }
+  .influence-card-media-no-img {
+    height: calc(212px * 425 / 375);
+    margin-bottom: calc(28px * 425 / 375);
+  }
+  .influence-card-media-no-img-note {
+    bottom: calc(-28px * 425 / 375);
+  }
+  .influence-card-media-no-img-section-title {
+    margin-top: calc(30px * 425 / 375);
+    margin-bottom: calc(12px * 425 / 375);
+  }
+  .influence-card-media-no-img-section-img {
+    width: 100%;
+    height: calc(72px * 425 / 375);
+  }
+  .influence-card-media-no-img-section .influences-list-item:not(:last-child) {
+    margin-bottom: calc(12px * 425 / 375);
+  }
+  .influence-card-media-no-img-section .influences-list-item-icon {
+    min-width: calc(24px * 425 / 375);
+    margin-right: calc(3px * 425 / 375);
+  }
+}
+@media (min-width: 768px) {
+  .influence {
+    padding-bottom: calc(36px * 768 / 375);
+  }
+  .influence-title {
+    line-height: calc(42px * 768 / 375);
+  }
+  .influence-title.y-8 {
+    margin-top: calc(25px * 768 / 375);
+    margin-bottom: calc(14px * 768 / 375);
+  }
+  .influence-title.y-10 {
+    margin-top: calc(49px * 768 / 375);
+    margin-bottom: calc(13px * 768 / 375);
+  }
+  .influence-card-media {
+    height: calc(291px * 768 / 375);
+    margin-bottom: calc(1px * 768 / 375);
+  }
+  .influence-card-media-img {
+    height: calc(216px * 768 / 375);
+  }
+  .influence-card-media-label {
+    padding: calc(5px * 768 / 375) calc(9px * 768 / 375);
+    height: calc(100% - 216px * 768 / 375);
+  }
+  .influence-card-media-note {
+    top: calc(190px * 768 / 375);
+  }
+  .influence-card-media-no-img {
+    height: calc(212px * 768 / 375);
+    margin-bottom: calc(28px * 768 / 375);
+  }
+  .influence-card-media-no-img-note {
+    bottom: calc(-28px * 768 / 375);
+  }
+  .influence-card-media-no-img-section-title {
+    margin-top: calc(30px * 768 / 375);
+    margin-bottom: calc(12px * 768 / 375);
+  }
+  .influence-card-media-no-img-section-img {
+    width: 100%;
+    height: calc(72px * 768 / 375);
+  }
+  .influence-card-media-no-img-section .influences-list-item:not(:last-child) {
+    margin-bottom: calc(12px * 768 / 375);
+  }
+  .influence-card-media-no-img-section .influences-list-item-icon {
+    min-width: calc(24px * 768 / 375);
+    margin-right: calc(3px * 768 / 375);
+  }
+}/*# sourceMappingURL=InfluenceSection.css.map */

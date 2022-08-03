@@ -1,0 +1,85 @@
+$breakpoints: 280, 320, 375, 390, 412, 425, 768;
+
+.product {
+    background-image: url(../assets/images/stars.png);
+    background-repeat: no-repeat;
+    background-position: 20px 30px;
+    background-size: 85%;
+
+    &-title {
+        margin-top: 41px;
+        margin-bottom: 37px;
+    }
+
+    &-list {
+        margin-bottom: 44px;
+        list-style-type: none;
+        max-width: 100%;
+        padding: 0;
+        height: 304px;
+        overflow: scroll;
+        
+        &::-webkit-scrollbar {
+            display: none;
+        }
+        
+        .product-wrapper {
+            display: flex;
+            padding: 0 25px 0 25px;
+            min-width: 506px;
+
+            &:not(:last-child) {
+                margin-bottom: 24px;
+            }
+
+        }
+
+        &-item {
+            min-width: 140px;
+            aspect-ratio: 1 / 1;
+            border-radius: 8px;
+            overflow: hidden;
+
+            &:not(:last-child) {
+                margin-right: 18px;
+            }
+        }
+    }
+}
+
+@each $breakpoint in $breakpoints {
+    @media (min-width: #{$breakpoint}px) {
+        .product {
+            background-position: calc(20px * #{$breakpoint} / 375) calc(30px * #{$breakpoint} / 375);
+            background-size: calc(85% * #{$breakpoint} / 375);
+        
+            &-title {
+                margin-top: calc(41px * #{$breakpoint} / 375);
+                margin-bottom: calc(37px * #{$breakpoint} / 375);
+            }
+        
+            &-list {
+                margin-bottom: calc(44px * #{$breakpoint} / 375);
+                height: calc(304px * #{$breakpoint} / 375);
+                
+                .product-wrapper {
+                    padding: 0 calc(25px * #{$breakpoint} / 375) 0 calc(25px * #{$breakpoint} / 375);
+                    min-width: calc(506px * #{$breakpoint} / 375);
+        
+                    &:not(:last-child) {
+                        margin-bottom: calc(24px * #{$breakpoint} / 375);
+                    }
+        
+                }
+        
+                &-item {
+                    min-width: calc(140px * #{$breakpoint} / 375);
+        
+                    &:not(:last-child) {
+                        margin-right: calc(18px * #{$breakpoint} / 375);
+                    }
+                }
+            }
+        }
+    }
+  }

@@ -1,0 +1,89 @@
+.intro-sub-title {
+  width: 304px;
+  height: 76px;
+  background-image: url(../assets/images/ru-giac-ngu-em.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-bottom: 32px;
+  margin: auto;
+}
+.intro-background {
+  width: 100%;
+  height: 472px;
+  background-image: url(../assets/images/foam-1.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media (min-width: 280px) {
+  .intro-sub-title {
+    width: calc(304px * 280 / 375);
+    height: calc(76px * 280 / 375);
+    margin-bottom: calc(32px * 280 / 375);
+  }
+  .intro-background {
+    height: calc(472px * 280 / 375);
+  }
+}
+@media (min-width: 320px) {
+  .intro-sub-title {
+    width: calc(304px * 320 / 375);
+    height: calc(76px * 320 / 375);
+    margin-bottom: calc(32px * 320 / 375);
+  }
+  .intro-background {
+    height: calc(472px * 320 / 375);
+  }
+}
+@media (min-width: 375px) {
+  .intro-sub-title {
+    width: calc(304px * 375 / 375);
+    height: calc(76px * 375 / 375);
+    margin-bottom: calc(32px * 375 / 375);
+  }
+  .intro-background {
+    height: calc(472px * 375 / 375);
+  }
+}
+@media (min-width: 390px) {
+  .intro-sub-title {
+    width: calc(304px * 390 / 375);
+    height: calc(76px * 390 / 375);
+    margin-bottom: calc(32px * 390 / 375);
+  }
+  .intro-background {
+    height: calc(472px * 390 / 375);
+  }
+}
+@media (min-width: 412px) {
+  .intro-sub-title {
+    width: calc(304px * 412 / 375);
+    height: calc(76px * 412 / 375);
+    margin-bottom: calc(32px * 412 / 375);
+  }
+  .intro-background {
+    height: calc(472px * 412 / 375);
+  }
+}
+@media (min-width: 425px) {
+  .intro-sub-title {
+    width: calc(304px * 425 / 375);
+    height: calc(76px * 425 / 375);
+    margin-bottom: calc(32px * 425 / 375);
+  }
+  .intro-background {
+    height: calc(472px * 425 / 375);
+  }
+}
+@media (min-width: 768px) {
+  .intro-sub-title {
+    width: calc(304px * 768 / 375);
+    height: calc(76px * 768 / 375);
+    margin-bottom: calc(32px * 768 / 375);
+  }
+  .intro-background {
+    height: calc(472px * 768 / 375);
+  }
+}/*# sourceMappingURL=IntroSection.css.map */

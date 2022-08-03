@@ -1,0 +1,1739 @@
+:root {
+  --vn-primary-bold: #040F47;
+  --vn-primary: #131474;
+  --vn-primary-light: #2d2e80;
+  --vn-blue: #608aeb;
+  --vn-teal: #1AF9FF;
+  --vn-primary-border: #343890;
+  --vn-secondary: #f6a733;
+  --vn-white: #FFFFFF;
+  --vn-grey: #E9F0F8;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+button:hover {
+  transform: scale(1.1);
+}
+button:focus {
+  outline: none !important;
+}
+
+img {
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.mask--2 {
+  z-index: -2;
+}
+
+.mask--1 {
+  z-index: -1;
+}
+
+.mask-0 {
+  z-index: 0;
+}
+
+.mask-1 {
+  z-index: 1;
+}
+
+.mask-2 {
+  z-index: 2;
+}
+
+.mask-3 {
+  z-index: 3;
+}
+
+.mask-4 {
+  z-index: 4;
+}
+
+.mask-5 {
+  z-index: 5;
+}
+
+.font-10 {
+  font-size: calc(1rem *10/ 16);
+}
+
+.font-12 {
+  font-size: calc(1rem *12/ 16);
+}
+
+.font-13 {
+  font-size: calc(1rem *13/ 16);
+}
+
+.font-14 {
+  font-size: calc(1rem *14/ 16);
+}
+
+.font-16 {
+  font-size: calc(1rem *16/ 16);
+}
+
+.font-18 {
+  font-size: calc(1rem *18/ 16);
+}
+
+.font-22 {
+  font-size: calc(1rem *22/ 16);
+}
+
+.font-24 {
+  font-size: calc(1rem *24/ 16);
+}
+
+.font-28 {
+  font-size: calc(1rem *28/ 16);
+}
+
+.font-30 {
+  font-size: calc(1rem *30/ 16);
+}
+
+.font-32 {
+  font-size: calc(1rem *32/ 16);
+}
+
+.font-35 {
+  font-size: calc(1rem *35/ 16);
+}
+
+.font-36 {
+  font-size: calc(1rem *36/ 16);
+}
+
+.lh-0 {
+  line-height: 0px;
+}
+
+.lh-10 {
+  line-height: 10px;
+}
+
+.lh-20 {
+  line-height: 20px;
+}
+
+.lh-25 {
+  line-height: 25px;
+}
+
+.lh-30 {
+  line-height: 30px;
+}
+
+.lh-35 {
+  line-height: 35px;
+}
+
+.lh-40 {
+  line-height: 40px;
+}
+
+.lh-45 {
+  line-height: 45px;
+}
+
+.lh-50 {
+  line-height: 50px;
+}
+
+.lh-55 {
+  line-height: 55px;
+}
+
+.lh-60 {
+  line-height: 60px;
+}
+
+.lh-65 {
+  line-height: 65px;
+}
+
+.lh-70 {
+  line-height: 70px;
+}
+
+.lh-75 {
+  line-height: 75px;
+}
+
+@font-face {
+  font-family: "Averta 200";
+  src: url("../assets/fonts/averta/Averta-Thin.otf") format("opentype");
+}
+.weight-200 {
+  font-family: "Averta 200";
+}
+
+@font-face {
+  font-family: "Averta 300";
+  src: url("../assets/fonts/averta/Averta-Light.otf") format("opentype");
+}
+.weight-300 {
+  font-family: "Averta 300";
+}
+
+@font-face {
+  font-family: "Averta 400";
+  src: url("../assets/fonts/averta/Averta-Regular.otf") format("opentype");
+}
+.weight-400 {
+  font-family: "Averta 400";
+}
+
+@font-face {
+  font-family: "Averta 500";
+  src: url("../assets/fonts/averta/Averta-Bold.otf") format("opentype");
+}
+.weight-500 {
+  font-family: "Averta 500";
+}
+
+@font-face {
+  font-family: "Averta 600";
+  src: url("../assets/fonts/averta/Averta-Semibold.otf") format("opentype");
+}
+.weight-600 {
+  font-family: "Averta 600";
+}
+
+@font-face {
+  font-family: "Averta 700";
+  src: url("../assets/fonts/averta/Averta-ExtraBold.otf") format("opentype");
+}
+.weight-700 {
+  font-family: "Averta 700";
+}
+
+@font-face {
+  font-family: "Averta 800";
+  src: url("../assets/fonts/averta/Averta-Black.otf") format("opentype");
+}
+.weight-800 {
+  font-family: "Averta 800";
+}
+
+.h-flip {
+  transform: rotateY(180deg);
+}
+
+.v-flip {
+  transform: rotateX(180deg);
+}
+
+.p-relative {
+  position: relative;
+}
+
+.p-absolute {
+  position: absolute;
+}
+
+.vn-text-teal {
+  color: var(--vn-teal);
+}
+.vn-text-white {
+  color: var(--vn-white);
+}
+.vn-text-blue {
+  color: var(--vn-blue);
+}
+.vn-text-primary {
+  color: var(--vn-primary);
+}
+.vn-text-primary-light {
+  color: var(--vn-primary-light);
+}
+.vn-text-secondary {
+  color: var(--vn-secondary);
+}
+
+.vn-bg-grey {
+  background-color: var(--vn-grey);
+}
+.vn-bg-white {
+  background-color: var(--vn-white);
+}
+.vn-bg-blue {
+  background-color: var(--vn-blue);
+}
+.vn-bg-primary {
+  background-color: var(--vn-primary);
+}
+.vn-bg-primary-light {
+  background-color: var(--vn-primary-light);
+}
+.vn-bg-secondary {
+  background-color: var(--vn-secondary);
+}
+
+#app {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-slide {
+  position: fixed;
+  top: 0;
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  overflow-x: scroll;
+  width: 100%;
+  -webkit-overflow-scrolling: touch;
+}
+.navbar-slide::-webkit-scrollbar {
+  display: none;
+}
+.navbar-slide-item {
+  min-width: 120px;
+  height: 64px;
+  border-top: 2px solid var(--vn-primary-border);
+  border-bottom: 2px solid var(--vn-primary-border);
+  border-left: 2px solid var(--vn-primary-border);
+  font-size: 0;
+  display: block;
+}
+.navbar-slide-item-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  padding: 4px;
+  background-color: var(--vn-white);
+  color: var(--vn-primary);
+  text-decoration: none;
+}
+.navbar-slide-item-link.active {
+  background-color: var(--vn-primary);
+  color: var(--vn-white);
+}
+
+.section {
+  width: 100%;
+  height: auto;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.styled-button {
+  width: 177px;
+  height: 42px;
+  border-radius: 8px;
+  background-color: var(--vn-secondary);
+  text-transform: uppercase;
+  color: var(--vn-white);
+  margin: auto;
+}
+
+.styled-icon {
+  border-radius: 50%;
+  background-color: var(--vn-white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 11px;
+  aspect-ratio: 1/1;
+}
+.styled-icon.vertical {
+  margin-right: 0;
+  margin-bottom: 8px;
+}
+.styled-icon#width-48px {
+  min-width: 48px;
+}
+.styled-icon#width-80px {
+  min-width: 80px;
+}
+.styled-icon#width-80px img {
+  min-width: 75%;
+}
+.styled-icon img {
+  max-width: 75%;
+  height: 75%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.step {
+  width: 100%;
+}
+.step:not(:last-child) {
+  margin-bottom: 40px;
+}
+.step-icon {
+  min-width: 80px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--vn-primary);
+  margin-right: 33px;
+}
+.step-icon img {
+  width: 60%;
+}
+
+.media-card {
+  width: 100%;
+  height: 197px;
+  overflow: hidden;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+.media-card-img {
+  width: 100%;
+  height: 127px;
+}
+.media-card-img img {
+  min-height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.media-card-content {
+  width: 100%;
+  height: calc(100% - 127px);
+  background-color: var(--vn-primary);
+  padding: 6px 4px;
+}
+
+.register-form {
+  border-radius: 4px;
+  padding: 19px 37px;
+  width: 100%;
+  height: 422px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 38px;
+}
+.register-form-title {
+  margin-bottom: 12px;
+}
+.register-form-text-field {
+  border: 1px solid var(--vn-white);
+  border-radius: 4px;
+  padding: 0 9px;
+  background-color: transparent;
+  width: 252px;
+  height: 32px;
+}
+.register-form-text-field:hover, .register-form-text-field :focus {
+  border-color: var(--vn-blue);
+}
+.register-form-text-field:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: var(--vn-white);
+}
+.register-form-text-field::-moz-placeholder {
+  color: var(--vn-white);
+}
+.register-form-text-field::placeholder {
+  color: var(--vn-white);
+}
+.register-form-text-field.voucher {
+  height: auto;
+  padding: 0 8px;
+  margin-top: 2px;
+}
+.register-form-control {
+  position: relative;
+  margin-bottom: 24px;
+}
+.register-form-radio {
+  margin-right: 5px;
+}
+.register-form-voucher {
+  margin: 6px 0;
+}
+.register-form-select-wrapper {
+  position: relative;
+}
+.register-form-select-wrapper:after {
+  content: " ";
+  position: absolute;
+  width: 8px;
+  aspect-ratio: 1/1;
+  display: block;
+  background-image: url(../assets/icons/select-arrow.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  right: 10px;
+  top: 50%;
+  transform: translate(0, -50%);
+  pointer-events: none;
+}
+.register-form-select-option-list {
+  list-style-type: none;
+  padding: 0;
+  border-radius: 4px;
+  position: absolute;
+  bottom: -143px;
+  width: 252px;
+}
+.register-form-select-option-list-item {
+  width: 100%;
+  height: 21px;
+  padding: 0 9px;
+  color: #000000;
+  background-color: var(--vn-white);
+  display: flex;
+  align-items: center;
+}
+.register-form-select-option-list-item:hover, .register-form-select-option-list-item :focus {
+  background-color: var(--vn-primary-light);
+  color: var(--vn-white);
+}
+.register-form-error {
+  position: absolute;
+  bottom: -21px;
+  color: #FF3232;
+  left: 0;
+}
+.register-form-btn {
+  width: 100%;
+  height: 30px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 18px;
+  margin-bottom: 8px;
+}
+
+.container {
+  --bs-gutter-x: 3.0rem !important;
+}
+
+.row {
+  --bs-gutter-x: 3.0rem !important;
+}
+
+@media (min-width: 280px) {
+  .font-10 {
+    font-size: calc(1rem *10/ 16 * 280 / 375);
+  }
+  .font-12 {
+    font-size: calc(1rem *12/ 16 * 280 / 375);
+  }
+  .font-13 {
+    font-size: calc(1rem *13/ 16 * 280 / 375);
+  }
+  .font-14 {
+    font-size: calc(1rem *14/ 16 * 280 / 375);
+  }
+  .font-16 {
+    font-size: calc(1rem *16/ 16 * 280 / 375);
+  }
+  .font-18 {
+    font-size: calc(1rem *18/ 16 * 280 / 375);
+  }
+  .font-22 {
+    font-size: calc(1rem *22/ 16 * 280 / 375);
+  }
+  .font-24 {
+    font-size: calc(1rem *24/ 16 * 280 / 375);
+  }
+  .font-28 {
+    font-size: calc(1rem *28/ 16 * 280 / 375);
+  }
+  .font-30 {
+    font-size: calc(1rem *30/ 16 * 280 / 375);
+  }
+  .font-32 {
+    font-size: calc(1rem *32/ 16 * 280 / 375);
+  }
+  .font-35 {
+    font-size: calc(1rem *35/ 16 * 280 / 375);
+  }
+  .font-36 {
+    font-size: calc(1rem *36/ 16 * 280 / 375);
+  }
+  .lh-0 {
+    line-height: calc(0px * 280 / 375);
+  }
+  .lh-10 {
+    line-height: calc(10px * 280 / 375);
+  }
+  .lh-20 {
+    line-height: calc(20px * 280 / 375);
+  }
+  .lh-25 {
+    line-height: calc(25px * 280 / 375);
+  }
+  .lh-30 {
+    line-height: calc(30px * 280 / 375);
+  }
+  .lh-35 {
+    line-height: calc(35px * 280 / 375);
+  }
+  .lh-40 {
+    line-height: calc(40px * 280 / 375);
+  }
+  .lh-45 {
+    line-height: calc(45px * 280 / 375);
+  }
+  .lh-50 {
+    line-height: calc(50px * 280 / 375);
+  }
+  .lh-55 {
+    line-height: calc(55px * 280 / 375);
+  }
+  .lh-60 {
+    line-height: calc(60px * 280 / 375);
+  }
+  .lh-65 {
+    line-height: calc(65px * 280 / 375);
+  }
+  .lh-70 {
+    line-height: calc(70px * 280 / 375);
+  }
+  .lh-75 {
+    line-height: calc(75px * 280 / 375);
+  }
+  .navbar-slide-item {
+    min-width: calc(120px* 280 / 375);
+    height: calc(64px * 280 / 375);
+  }
+  .styled-button {
+    width: calc(177px * 280 / 375);
+    height: calc(42px * 280 / 375);
+  }
+  .styled-icon {
+    margin-right: calc(11px * 280 / 375);
+  }
+  .styled-icon.vertical {
+    margin-bottom: calc(8px * 280 / 375);
+  }
+  .styled-icon#width-48px {
+    min-width: calc(48px * 280 / 375);
+  }
+  .styled-icon#width-80px {
+    min-width: calc(80px * 280 / 375);
+  }
+  .step:not(:last-child) {
+    margin-bottom: calc(40px * 280 / 375);
+  }
+  .step-icon {
+    min-width: calc(80px * 280 / 375);
+    margin-right: calc(33px * 280 / 375);
+  }
+  .media-card {
+    height: calc(197px * 280 / 375);
+    margin-bottom: calc(20px * 280 / 375);
+  }
+  .media-card-img {
+    height: calc(127px * 280 / 375);
+  }
+  .media-card-content {
+    height: calc(100% - 127px * 280 / 375);
+  }
+  .register-form {
+    padding: calc(19px * 280 / 375) calc(37px * 280 / 375);
+    height: calc(422px * 280 / 375);
+    margin-bottom: calc(38px * 280 / 375);
+  }
+  .register-form-title {
+    margin-bottom: calc(12px * 280 / 375);
+  }
+  .register-form-text-field {
+    padding: 0 calc(9px * 280 / 375);
+    width: calc(252px * 280 / 375);
+    height: calc(32px * 280 / 375);
+  }
+  .register-form-text-field.voucher {
+    padding: 0 calc(8px * 280 / 375);
+    margin-top: calc(2px * 280 / 375);
+  }
+  .register-form-control {
+    margin-bottom: calc(24px * 280 / 375);
+  }
+  .register-form-radio {
+    margin-right: calc(5px * 280 / 375);
+  }
+  .register-form-voucher {
+    margin: calc(6px * 280 / 375) 0;
+  }
+  .register-form-select-wrapper:after {
+    width: calc(8px * 280 / 375);
+    right: calc(10px * 280 / 375);
+  }
+  .register-form-select-option-list {
+    bottom: calc(-143px * 280 / 375);
+    width: calc(252px * 280 / 375);
+  }
+  .register-form-select-option-list-item {
+    height: calc(21px * 280 / 375);
+    padding: 0 calc(9px * 280 / 375);
+  }
+  .register-form-error {
+    bottom: calc(-21px * 280 / 375);
+  }
+  .register-form-btn {
+    height: calc(30px * 280 / 375);
+    margin-top: calc(18px * 280 / 375);
+    margin-bottom: calc(8px * 280 / 375);
+  }
+  .container {
+    --bs-gutter-x: calc(3.0rem * 280 / 375) !important;
+  }
+  .row {
+    --bs-gutter-x: calc(3.0rem * 280 / 375) !important;
+  }
+}
+@media (min-width: 320px) {
+  .font-10 {
+    font-size: calc(1rem *10/ 16 * 320 / 375);
+  }
+  .font-12 {
+    font-size: calc(1rem *12/ 16 * 320 / 375);
+  }
+  .font-13 {
+    font-size: calc(1rem *13/ 16 * 320 / 375);
+  }
+  .font-14 {
+    font-size: calc(1rem *14/ 16 * 320 / 375);
+  }
+  .font-16 {
+    font-size: calc(1rem *16/ 16 * 320 / 375);
+  }
+  .font-18 {
+    font-size: calc(1rem *18/ 16 * 320 / 375);
+  }
+  .font-22 {
+    font-size: calc(1rem *22/ 16 * 320 / 375);
+  }
+  .font-24 {
+    font-size: calc(1rem *24/ 16 * 320 / 375);
+  }
+  .font-28 {
+    font-size: calc(1rem *28/ 16 * 320 / 375);
+  }
+  .font-30 {
+    font-size: calc(1rem *30/ 16 * 320 / 375);
+  }
+  .font-32 {
+    font-size: calc(1rem *32/ 16 * 320 / 375);
+  }
+  .font-35 {
+    font-size: calc(1rem *35/ 16 * 320 / 375);
+  }
+  .font-36 {
+    font-size: calc(1rem *36/ 16 * 320 / 375);
+  }
+  .lh-0 {
+    line-height: calc(0px * 320 / 375);
+  }
+  .lh-10 {
+    line-height: calc(10px * 320 / 375);
+  }
+  .lh-20 {
+    line-height: calc(20px * 320 / 375);
+  }
+  .lh-25 {
+    line-height: calc(25px * 320 / 375);
+  }
+  .lh-30 {
+    line-height: calc(30px * 320 / 375);
+  }
+  .lh-35 {
+    line-height: calc(35px * 320 / 375);
+  }
+  .lh-40 {
+    line-height: calc(40px * 320 / 375);
+  }
+  .lh-45 {
+    line-height: calc(45px * 320 / 375);
+  }
+  .lh-50 {
+    line-height: calc(50px * 320 / 375);
+  }
+  .lh-55 {
+    line-height: calc(55px * 320 / 375);
+  }
+  .lh-60 {
+    line-height: calc(60px * 320 / 375);
+  }
+  .lh-65 {
+    line-height: calc(65px * 320 / 375);
+  }
+  .lh-70 {
+    line-height: calc(70px * 320 / 375);
+  }
+  .lh-75 {
+    line-height: calc(75px * 320 / 375);
+  }
+  .navbar-slide-item {
+    min-width: calc(120px* 320 / 375);
+    height: calc(64px * 320 / 375);
+  }
+  .styled-button {
+    width: calc(177px * 320 / 375);
+    height: calc(42px * 320 / 375);
+  }
+  .styled-icon {
+    margin-right: calc(11px * 320 / 375);
+  }
+  .styled-icon.vertical {
+    margin-bottom: calc(8px * 320 / 375);
+  }
+  .styled-icon#width-48px {
+    min-width: calc(48px * 320 / 375);
+  }
+  .styled-icon#width-80px {
+    min-width: calc(80px * 320 / 375);
+  }
+  .step:not(:last-child) {
+    margin-bottom: calc(40px * 320 / 375);
+  }
+  .step-icon {
+    min-width: calc(80px * 320 / 375);
+    margin-right: calc(33px * 320 / 375);
+  }
+  .media-card {
+    height: calc(197px * 320 / 375);
+    margin-bottom: calc(20px * 320 / 375);
+  }
+  .media-card-img {
+    height: calc(127px * 320 / 375);
+  }
+  .media-card-content {
+    height: calc(100% - 127px * 320 / 375);
+  }
+  .register-form {
+    padding: calc(19px * 320 / 375) calc(37px * 320 / 375);
+    height: calc(422px * 320 / 375);
+    margin-bottom: calc(38px * 320 / 375);
+  }
+  .register-form-title {
+    margin-bottom: calc(12px * 320 / 375);
+  }
+  .register-form-text-field {
+    padding: 0 calc(9px * 320 / 375);
+    width: calc(252px * 320 / 375);
+    height: calc(32px * 320 / 375);
+  }
+  .register-form-text-field.voucher {
+    padding: 0 calc(8px * 320 / 375);
+    margin-top: calc(2px * 320 / 375);
+  }
+  .register-form-control {
+    margin-bottom: calc(24px * 320 / 375);
+  }
+  .register-form-radio {
+    margin-right: calc(5px * 320 / 375);
+  }
+  .register-form-voucher {
+    margin: calc(6px * 320 / 375) 0;
+  }
+  .register-form-select-wrapper:after {
+    width: calc(8px * 320 / 375);
+    right: calc(10px * 320 / 375);
+  }
+  .register-form-select-option-list {
+    bottom: calc(-143px * 320 / 375);
+    width: calc(252px * 320 / 375);
+  }
+  .register-form-select-option-list-item {
+    height: calc(21px * 320 / 375);
+    padding: 0 calc(9px * 320 / 375);
+  }
+  .register-form-error {
+    bottom: calc(-21px * 320 / 375);
+  }
+  .register-form-btn {
+    height: calc(30px * 320 / 375);
+    margin-top: calc(18px * 320 / 375);
+    margin-bottom: calc(8px * 320 / 375);
+  }
+  .container {
+    --bs-gutter-x: calc(3.0rem * 320 / 375) !important;
+  }
+  .row {
+    --bs-gutter-x: calc(3.0rem * 320 / 375) !important;
+  }
+}
+@media (min-width: 375px) {
+  .font-10 {
+    font-size: calc(1rem *10/ 16 * 375 / 375);
+  }
+  .font-12 {
+    font-size: calc(1rem *12/ 16 * 375 / 375);
+  }
+  .font-13 {
+    font-size: calc(1rem *13/ 16 * 375 / 375);
+  }
+  .font-14 {
+    font-size: calc(1rem *14/ 16 * 375 / 375);
+  }
+  .font-16 {
+    font-size: calc(1rem *16/ 16 * 375 / 375);
+  }
+  .font-18 {
+    font-size: calc(1rem *18/ 16 * 375 / 375);
+  }
+  .font-22 {
+    font-size: calc(1rem *22/ 16 * 375 / 375);
+  }
+  .font-24 {
+    font-size: calc(1rem *24/ 16 * 375 / 375);
+  }
+  .font-28 {
+    font-size: calc(1rem *28/ 16 * 375 / 375);
+  }
+  .font-30 {
+    font-size: calc(1rem *30/ 16 * 375 / 375);
+  }
+  .font-32 {
+    font-size: calc(1rem *32/ 16 * 375 / 375);
+  }
+  .font-35 {
+    font-size: calc(1rem *35/ 16 * 375 / 375);
+  }
+  .font-36 {
+    font-size: calc(1rem *36/ 16 * 375 / 375);
+  }
+  .lh-0 {
+    line-height: calc(0px * 375 / 375);
+  }
+  .lh-10 {
+    line-height: calc(10px * 375 / 375);
+  }
+  .lh-20 {
+    line-height: calc(20px * 375 / 375);
+  }
+  .lh-25 {
+    line-height: calc(25px * 375 / 375);
+  }
+  .lh-30 {
+    line-height: calc(30px * 375 / 375);
+  }
+  .lh-35 {
+    line-height: calc(35px * 375 / 375);
+  }
+  .lh-40 {
+    line-height: calc(40px * 375 / 375);
+  }
+  .lh-45 {
+    line-height: calc(45px * 375 / 375);
+  }
+  .lh-50 {
+    line-height: calc(50px * 375 / 375);
+  }
+  .lh-55 {
+    line-height: calc(55px * 375 / 375);
+  }
+  .lh-60 {
+    line-height: calc(60px * 375 / 375);
+  }
+  .lh-65 {
+    line-height: calc(65px * 375 / 375);
+  }
+  .lh-70 {
+    line-height: calc(70px * 375 / 375);
+  }
+  .lh-75 {
+    line-height: calc(75px * 375 / 375);
+  }
+  .navbar-slide-item {
+    min-width: calc(120px* 375 / 375);
+    height: calc(64px * 375 / 375);
+  }
+  .styled-button {
+    width: calc(177px * 375 / 375);
+    height: calc(42px * 375 / 375);
+  }
+  .styled-icon {
+    margin-right: calc(11px * 375 / 375);
+  }
+  .styled-icon.vertical {
+    margin-bottom: calc(8px * 375 / 375);
+  }
+  .styled-icon#width-48px {
+    min-width: calc(48px * 375 / 375);
+  }
+  .styled-icon#width-80px {
+    min-width: calc(80px * 375 / 375);
+  }
+  .step:not(:last-child) {
+    margin-bottom: calc(40px * 375 / 375);
+  }
+  .step-icon {
+    min-width: calc(80px * 375 / 375);
+    margin-right: calc(33px * 375 / 375);
+  }
+  .media-card {
+    height: calc(197px * 375 / 375);
+    margin-bottom: calc(20px * 375 / 375);
+  }
+  .media-card-img {
+    height: calc(127px * 375 / 375);
+  }
+  .media-card-content {
+    height: calc(100% - 127px * 375 / 375);
+  }
+  .register-form {
+    padding: calc(19px * 375 / 375) calc(37px * 375 / 375);
+    height: calc(422px * 375 / 375);
+    margin-bottom: calc(38px * 375 / 375);
+  }
+  .register-form-title {
+    margin-bottom: calc(12px * 375 / 375);
+  }
+  .register-form-text-field {
+    padding: 0 calc(9px * 375 / 375);
+    width: calc(252px * 375 / 375);
+    height: calc(32px * 375 / 375);
+  }
+  .register-form-text-field.voucher {
+    padding: 0 calc(8px * 375 / 375);
+    margin-top: calc(2px * 375 / 375);
+  }
+  .register-form-control {
+    margin-bottom: calc(24px * 375 / 375);
+  }
+  .register-form-radio {
+    margin-right: calc(5px * 375 / 375);
+  }
+  .register-form-voucher {
+    margin: calc(6px * 375 / 375) 0;
+  }
+  .register-form-select-wrapper:after {
+    width: calc(8px * 375 / 375);
+    right: calc(10px * 375 / 375);
+  }
+  .register-form-select-option-list {
+    bottom: calc(-143px * 375 / 375);
+    width: calc(252px * 375 / 375);
+  }
+  .register-form-select-option-list-item {
+    height: calc(21px * 375 / 375);
+    padding: 0 calc(9px * 375 / 375);
+  }
+  .register-form-error {
+    bottom: calc(-21px * 375 / 375);
+  }
+  .register-form-btn {
+    height: calc(30px * 375 / 375);
+    margin-top: calc(18px * 375 / 375);
+    margin-bottom: calc(8px * 375 / 375);
+  }
+  .container {
+    --bs-gutter-x: calc(3.0rem * 375 / 375) !important;
+  }
+  .row {
+    --bs-gutter-x: calc(3.0rem * 375 / 375) !important;
+  }
+}
+@media (min-width: 390px) {
+  .font-10 {
+    font-size: calc(1rem *10/ 16 * 390 / 375);
+  }
+  .font-12 {
+    font-size: calc(1rem *12/ 16 * 390 / 375);
+  }
+  .font-13 {
+    font-size: calc(1rem *13/ 16 * 390 / 375);
+  }
+  .font-14 {
+    font-size: calc(1rem *14/ 16 * 390 / 375);
+  }
+  .font-16 {
+    font-size: calc(1rem *16/ 16 * 390 / 375);
+  }
+  .font-18 {
+    font-size: calc(1rem *18/ 16 * 390 / 375);
+  }
+  .font-22 {
+    font-size: calc(1rem *22/ 16 * 390 / 375);
+  }
+  .font-24 {
+    font-size: calc(1rem *24/ 16 * 390 / 375);
+  }
+  .font-28 {
+    font-size: calc(1rem *28/ 16 * 390 / 375);
+  }
+  .font-30 {
+    font-size: calc(1rem *30/ 16 * 390 / 375);
+  }
+  .font-32 {
+    font-size: calc(1rem *32/ 16 * 390 / 375);
+  }
+  .font-35 {
+    font-size: calc(1rem *35/ 16 * 390 / 375);
+  }
+  .font-36 {
+    font-size: calc(1rem *36/ 16 * 390 / 375);
+  }
+  .lh-0 {
+    line-height: calc(0px * 390 / 375);
+  }
+  .lh-10 {
+    line-height: calc(10px * 390 / 375);
+  }
+  .lh-20 {
+    line-height: calc(20px * 390 / 375);
+  }
+  .lh-25 {
+    line-height: calc(25px * 390 / 375);
+  }
+  .lh-30 {
+    line-height: calc(30px * 390 / 375);
+  }
+  .lh-35 {
+    line-height: calc(35px * 390 / 375);
+  }
+  .lh-40 {
+    line-height: calc(40px * 390 / 375);
+  }
+  .lh-45 {
+    line-height: calc(45px * 390 / 375);
+  }
+  .lh-50 {
+    line-height: calc(50px * 390 / 375);
+  }
+  .lh-55 {
+    line-height: calc(55px * 390 / 375);
+  }
+  .lh-60 {
+    line-height: calc(60px * 390 / 375);
+  }
+  .lh-65 {
+    line-height: calc(65px * 390 / 375);
+  }
+  .lh-70 {
+    line-height: calc(70px * 390 / 375);
+  }
+  .lh-75 {
+    line-height: calc(75px * 390 / 375);
+  }
+  .navbar-slide-item {
+    min-width: calc(120px* 390 / 375);
+    height: calc(64px * 390 / 375);
+  }
+  .styled-button {
+    width: calc(177px * 390 / 375);
+    height: calc(42px * 390 / 375);
+  }
+  .styled-icon {
+    margin-right: calc(11px * 390 / 375);
+  }
+  .styled-icon.vertical {
+    margin-bottom: calc(8px * 390 / 375);
+  }
+  .styled-icon#width-48px {
+    min-width: calc(48px * 390 / 375);
+  }
+  .styled-icon#width-80px {
+    min-width: calc(80px * 390 / 375);
+  }
+  .step:not(:last-child) {
+    margin-bottom: calc(40px * 390 / 375);
+  }
+  .step-icon {
+    min-width: calc(80px * 390 / 375);
+    margin-right: calc(33px * 390 / 375);
+  }
+  .media-card {
+    height: calc(197px * 390 / 375);
+    margin-bottom: calc(20px * 390 / 375);
+  }
+  .media-card-img {
+    height: calc(127px * 390 / 375);
+  }
+  .media-card-content {
+    height: calc(100% - 127px * 390 / 375);
+  }
+  .register-form {
+    padding: calc(19px * 390 / 375) calc(37px * 390 / 375);
+    height: calc(422px * 390 / 375);
+    margin-bottom: calc(38px * 390 / 375);
+  }
+  .register-form-title {
+    margin-bottom: calc(12px * 390 / 375);
+  }
+  .register-form-text-field {
+    padding: 0 calc(9px * 390 / 375);
+    width: calc(252px * 390 / 375);
+    height: calc(32px * 390 / 375);
+  }
+  .register-form-text-field.voucher {
+    padding: 0 calc(8px * 390 / 375);
+    margin-top: calc(2px * 390 / 375);
+  }
+  .register-form-control {
+    margin-bottom: calc(24px * 390 / 375);
+  }
+  .register-form-radio {
+    margin-right: calc(5px * 390 / 375);
+  }
+  .register-form-voucher {
+    margin: calc(6px * 390 / 375) 0;
+  }
+  .register-form-select-wrapper:after {
+    width: calc(8px * 390 / 375);
+    right: calc(10px * 390 / 375);
+  }
+  .register-form-select-option-list {
+    bottom: calc(-143px * 390 / 375);
+    width: calc(252px * 390 / 375);
+  }
+  .register-form-select-option-list-item {
+    height: calc(21px * 390 / 375);
+    padding: 0 calc(9px * 390 / 375);
+  }
+  .register-form-error {
+    bottom: calc(-21px * 390 / 375);
+  }
+  .register-form-btn {
+    height: calc(30px * 390 / 375);
+    margin-top: calc(18px * 390 / 375);
+    margin-bottom: calc(8px * 390 / 375);
+  }
+  .container {
+    --bs-gutter-x: calc(3.0rem * 390 / 375) !important;
+  }
+  .row {
+    --bs-gutter-x: calc(3.0rem * 390 / 375) !important;
+  }
+}
+@media (min-width: 412px) {
+  .font-10 {
+    font-size: calc(1rem *10/ 16 * 412 / 375);
+  }
+  .font-12 {
+    font-size: calc(1rem *12/ 16 * 412 / 375);
+  }
+  .font-13 {
+    font-size: calc(1rem *13/ 16 * 412 / 375);
+  }
+  .font-14 {
+    font-size: calc(1rem *14/ 16 * 412 / 375);
+  }
+  .font-16 {
+    font-size: calc(1rem *16/ 16 * 412 / 375);
+  }
+  .font-18 {
+    font-size: calc(1rem *18/ 16 * 412 / 375);
+  }
+  .font-22 {
+    font-size: calc(1rem *22/ 16 * 412 / 375);
+  }
+  .font-24 {
+    font-size: calc(1rem *24/ 16 * 412 / 375);
+  }
+  .font-28 {
+    font-size: calc(1rem *28/ 16 * 412 / 375);
+  }
+  .font-30 {
+    font-size: calc(1rem *30/ 16 * 412 / 375);
+  }
+  .font-32 {
+    font-size: calc(1rem *32/ 16 * 412 / 375);
+  }
+  .font-35 {
+    font-size: calc(1rem *35/ 16 * 412 / 375);
+  }
+  .font-36 {
+    font-size: calc(1rem *36/ 16 * 412 / 375);
+  }
+  .lh-0 {
+    line-height: calc(0px * 412 / 375);
+  }
+  .lh-10 {
+    line-height: calc(10px * 412 / 375);
+  }
+  .lh-20 {
+    line-height: calc(20px * 412 / 375);
+  }
+  .lh-25 {
+    line-height: calc(25px * 412 / 375);
+  }
+  .lh-30 {
+    line-height: calc(30px * 412 / 375);
+  }
+  .lh-35 {
+    line-height: calc(35px * 412 / 375);
+  }
+  .lh-40 {
+    line-height: calc(40px * 412 / 375);
+  }
+  .lh-45 {
+    line-height: calc(45px * 412 / 375);
+  }
+  .lh-50 {
+    line-height: calc(50px * 412 / 375);
+  }
+  .lh-55 {
+    line-height: calc(55px * 412 / 375);
+  }
+  .lh-60 {
+    line-height: calc(60px * 412 / 375);
+  }
+  .lh-65 {
+    line-height: calc(65px * 412 / 375);
+  }
+  .lh-70 {
+    line-height: calc(70px * 412 / 375);
+  }
+  .lh-75 {
+    line-height: calc(75px * 412 / 375);
+  }
+  .navbar-slide-item {
+    min-width: calc(120px* 412 / 375);
+    height: calc(64px * 412 / 375);
+  }
+  .styled-button {
+    width: calc(177px * 412 / 375);
+    height: calc(42px * 412 / 375);
+  }
+  .styled-icon {
+    margin-right: calc(11px * 412 / 375);
+  }
+  .styled-icon.vertical {
+    margin-bottom: calc(8px * 412 / 375);
+  }
+  .styled-icon#width-48px {
+    min-width: calc(48px * 412 / 375);
+  }
+  .styled-icon#width-80px {
+    min-width: calc(80px * 412 / 375);
+  }
+  .step:not(:last-child) {
+    margin-bottom: calc(40px * 412 / 375);
+  }
+  .step-icon {
+    min-width: calc(80px * 412 / 375);
+    margin-right: calc(33px * 412 / 375);
+  }
+  .media-card {
+    height: calc(197px * 412 / 375);
+    margin-bottom: calc(20px * 412 / 375);
+  }
+  .media-card-img {
+    height: calc(127px * 412 / 375);
+  }
+  .media-card-content {
+    height: calc(100% - 127px * 412 / 375);
+  }
+  .register-form {
+    padding: calc(19px * 412 / 375) calc(37px * 412 / 375);
+    height: calc(422px * 412 / 375);
+    margin-bottom: calc(38px * 412 / 375);
+  }
+  .register-form-title {
+    margin-bottom: calc(12px * 412 / 375);
+  }
+  .register-form-text-field {
+    padding: 0 calc(9px * 412 / 375);
+    width: calc(252px * 412 / 375);
+    height: calc(32px * 412 / 375);
+  }
+  .register-form-text-field.voucher {
+    padding: 0 calc(8px * 412 / 375);
+    margin-top: calc(2px * 412 / 375);
+  }
+  .register-form-control {
+    margin-bottom: calc(24px * 412 / 375);
+  }
+  .register-form-radio {
+    margin-right: calc(5px * 412 / 375);
+  }
+  .register-form-voucher {
+    margin: calc(6px * 412 / 375) 0;
+  }
+  .register-form-select-wrapper:after {
+    width: calc(8px * 412 / 375);
+    right: calc(10px * 412 / 375);
+  }
+  .register-form-select-option-list {
+    bottom: calc(-143px * 412 / 375);
+    width: calc(252px * 412 / 375);
+  }
+  .register-form-select-option-list-item {
+    height: calc(21px * 412 / 375);
+    padding: 0 calc(9px * 412 / 375);
+  }
+  .register-form-error {
+    bottom: calc(-21px * 412 / 375);
+  }
+  .register-form-btn {
+    height: calc(30px * 412 / 375);
+    margin-top: calc(18px * 412 / 375);
+    margin-bottom: calc(8px * 412 / 375);
+  }
+  .container {
+    --bs-gutter-x: calc(3.0rem * 412 / 375) !important;
+  }
+  .row {
+    --bs-gutter-x: calc(3.0rem * 412 / 375) !important;
+  }
+}
+@media (min-width: 425px) {
+  .font-10 {
+    font-size: calc(1rem *10/ 16 * 425 / 375);
+  }
+  .font-12 {
+    font-size: calc(1rem *12/ 16 * 425 / 375);
+  }
+  .font-13 {
+    font-size: calc(1rem *13/ 16 * 425 / 375);
+  }
+  .font-14 {
+    font-size: calc(1rem *14/ 16 * 425 / 375);
+  }
+  .font-16 {
+    font-size: calc(1rem *16/ 16 * 425 / 375);
+  }
+  .font-18 {
+    font-size: calc(1rem *18/ 16 * 425 / 375);
+  }
+  .font-22 {
+    font-size: calc(1rem *22/ 16 * 425 / 375);
+  }
+  .font-24 {
+    font-size: calc(1rem *24/ 16 * 425 / 375);
+  }
+  .font-28 {
+    font-size: calc(1rem *28/ 16 * 425 / 375);
+  }
+  .font-30 {
+    font-size: calc(1rem *30/ 16 * 425 / 375);
+  }
+  .font-32 {
+    font-size: calc(1rem *32/ 16 * 425 / 375);
+  }
+  .font-35 {
+    font-size: calc(1rem *35/ 16 * 425 / 375);
+  }
+  .font-36 {
+    font-size: calc(1rem *36/ 16 * 425 / 375);
+  }
+  .lh-0 {
+    line-height: calc(0px * 425 / 375);
+  }
+  .lh-10 {
+    line-height: calc(10px * 425 / 375);
+  }
+  .lh-20 {
+    line-height: calc(20px * 425 / 375);
+  }
+  .lh-25 {
+    line-height: calc(25px * 425 / 375);
+  }
+  .lh-30 {
+    line-height: calc(30px * 425 / 375);
+  }
+  .lh-35 {
+    line-height: calc(35px * 425 / 375);
+  }
+  .lh-40 {
+    line-height: calc(40px * 425 / 375);
+  }
+  .lh-45 {
+    line-height: calc(45px * 425 / 375);
+  }
+  .lh-50 {
+    line-height: calc(50px * 425 / 375);
+  }
+  .lh-55 {
+    line-height: calc(55px * 425 / 375);
+  }
+  .lh-60 {
+    line-height: calc(60px * 425 / 375);
+  }
+  .lh-65 {
+    line-height: calc(65px * 425 / 375);
+  }
+  .lh-70 {
+    line-height: calc(70px * 425 / 375);
+  }
+  .lh-75 {
+    line-height: calc(75px * 425 / 375);
+  }
+  .navbar-slide-item {
+    min-width: calc(120px* 425 / 375);
+    height: calc(64px * 425 / 375);
+  }
+  .styled-button {
+    width: calc(177px * 425 / 375);
+    height: calc(42px * 425 / 375);
+  }
+  .styled-icon {
+    margin-right: calc(11px * 425 / 375);
+  }
+  .styled-icon.vertical {
+    margin-bottom: calc(8px * 425 / 375);
+  }
+  .styled-icon#width-48px {
+    min-width: calc(48px * 425 / 375);
+  }
+  .styled-icon#width-80px {
+    min-width: calc(80px * 425 / 375);
+  }
+  .step:not(:last-child) {
+    margin-bottom: calc(40px * 425 / 375);
+  }
+  .step-icon {
+    min-width: calc(80px * 425 / 375);
+    margin-right: calc(33px * 425 / 375);
+  }
+  .media-card {
+    height: calc(197px * 425 / 375);
+    margin-bottom: calc(20px * 425 / 375);
+  }
+  .media-card-img {
+    height: calc(127px * 425 / 375);
+  }
+  .media-card-content {
+    height: calc(100% - 127px * 425 / 375);
+  }
+  .register-form {
+    padding: calc(19px * 425 / 375) calc(37px * 425 / 375);
+    height: calc(422px * 425 / 375);
+    margin-bottom: calc(38px * 425 / 375);
+  }
+  .register-form-title {
+    margin-bottom: calc(12px * 425 / 375);
+  }
+  .register-form-text-field {
+    padding: 0 calc(9px * 425 / 375);
+    width: calc(252px * 425 / 375);
+    height: calc(32px * 425 / 375);
+  }
+  .register-form-text-field.voucher {
+    padding: 0 calc(8px * 425 / 375);
+    margin-top: calc(2px * 425 / 375);
+  }
+  .register-form-control {
+    margin-bottom: calc(24px * 425 / 375);
+  }
+  .register-form-radio {
+    margin-right: calc(5px * 425 / 375);
+  }
+  .register-form-voucher {
+    margin: calc(6px * 425 / 375) 0;
+  }
+  .register-form-select-wrapper:after {
+    width: calc(8px * 425 / 375);
+    right: calc(10px * 425 / 375);
+  }
+  .register-form-select-option-list {
+    bottom: calc(-143px * 425 / 375);
+    width: calc(252px * 425 / 375);
+  }
+  .register-form-select-option-list-item {
+    height: calc(21px * 425 / 375);
+    padding: 0 calc(9px * 425 / 375);
+  }
+  .register-form-error {
+    bottom: calc(-21px * 425 / 375);
+  }
+  .register-form-btn {
+    height: calc(30px * 425 / 375);
+    margin-top: calc(18px * 425 / 375);
+    margin-bottom: calc(8px * 425 / 375);
+  }
+  .container {
+    --bs-gutter-x: calc(3.0rem * 425 / 375) !important;
+  }
+  .row {
+    --bs-gutter-x: calc(3.0rem * 425 / 375) !important;
+  }
+}
+@media (min-width: 768px) {
+  .font-10 {
+    font-size: calc(1rem *10/ 16 * 768 / 375);
+  }
+  .font-12 {
+    font-size: calc(1rem *12/ 16 * 768 / 375);
+  }
+  .font-13 {
+    font-size: calc(1rem *13/ 16 * 768 / 375);
+  }
+  .font-14 {
+    font-size: calc(1rem *14/ 16 * 768 / 375);
+  }
+  .font-16 {
+    font-size: calc(1rem *16/ 16 * 768 / 375);
+  }
+  .font-18 {
+    font-size: calc(1rem *18/ 16 * 768 / 375);
+  }
+  .font-22 {
+    font-size: calc(1rem *22/ 16 * 768 / 375);
+  }
+  .font-24 {
+    font-size: calc(1rem *24/ 16 * 768 / 375);
+  }
+  .font-28 {
+    font-size: calc(1rem *28/ 16 * 768 / 375);
+  }
+  .font-30 {
+    font-size: calc(1rem *30/ 16 * 768 / 375);
+  }
+  .font-32 {
+    font-size: calc(1rem *32/ 16 * 768 / 375);
+  }
+  .font-35 {
+    font-size: calc(1rem *35/ 16 * 768 / 375);
+  }
+  .font-36 {
+    font-size: calc(1rem *36/ 16 * 768 / 375);
+  }
+  .lh-0 {
+    line-height: calc(0px * 768 / 375);
+  }
+  .lh-10 {
+    line-height: calc(10px * 768 / 375);
+  }
+  .lh-20 {
+    line-height: calc(20px * 768 / 375);
+  }
+  .lh-25 {
+    line-height: calc(25px * 768 / 375);
+  }
+  .lh-30 {
+    line-height: calc(30px * 768 / 375);
+  }
+  .lh-35 {
+    line-height: calc(35px * 768 / 375);
+  }
+  .lh-40 {
+    line-height: calc(40px * 768 / 375);
+  }
+  .lh-45 {
+    line-height: calc(45px * 768 / 375);
+  }
+  .lh-50 {
+    line-height: calc(50px * 768 / 375);
+  }
+  .lh-55 {
+    line-height: calc(55px * 768 / 375);
+  }
+  .lh-60 {
+    line-height: calc(60px * 768 / 375);
+  }
+  .lh-65 {
+    line-height: calc(65px * 768 / 375);
+  }
+  .lh-70 {
+    line-height: calc(70px * 768 / 375);
+  }
+  .lh-75 {
+    line-height: calc(75px * 768 / 375);
+  }
+  .navbar-slide-item {
+    min-width: calc(120px* 768 / 375);
+    height: calc(64px * 768 / 375);
+  }
+  .styled-button {
+    width: calc(177px * 768 / 375);
+    height: calc(42px * 768 / 375);
+  }
+  .styled-icon {
+    margin-right: calc(11px * 768 / 375);
+  }
+  .styled-icon.vertical {
+    margin-bottom: calc(8px * 768 / 375);
+  }
+  .styled-icon#width-48px {
+    min-width: calc(48px * 768 / 375);
+  }
+  .styled-icon#width-80px {
+    min-width: calc(80px * 768 / 375);
+  }
+  .step:not(:last-child) {
+    margin-bottom: calc(40px * 768 / 375);
+  }
+  .step-icon {
+    min-width: calc(80px * 768 / 375);
+    margin-right: calc(33px * 768 / 375);
+  }
+  .media-card {
+    height: calc(197px * 768 / 375);
+    margin-bottom: calc(20px * 768 / 375);
+  }
+  .media-card-img {
+    height: calc(127px * 768 / 375);
+  }
+  .media-card-content {
+    height: calc(100% - 127px * 768 / 375);
+  }
+  .register-form {
+    padding: calc(19px * 768 / 375) calc(37px * 768 / 375);
+    height: calc(422px * 768 / 375);
+    margin-bottom: calc(38px * 768 / 375);
+  }
+  .register-form-title {
+    margin-bottom: calc(12px * 768 / 375);
+  }
+  .register-form-text-field {
+    padding: 0 calc(9px * 768 / 375);
+    width: calc(252px * 768 / 375);
+    height: calc(32px * 768 / 375);
+  }
+  .register-form-text-field.voucher {
+    padding: 0 calc(8px * 768 / 375);
+    margin-top: calc(2px * 768 / 375);
+  }
+  .register-form-control {
+    margin-bottom: calc(24px * 768 / 375);
+  }
+  .register-form-radio {
+    margin-right: calc(5px * 768 / 375);
+  }
+  .register-form-voucher {
+    margin: calc(6px * 768 / 375) 0;
+  }
+  .register-form-select-wrapper:after {
+    width: calc(8px * 768 / 375);
+    right: calc(10px * 768 / 375);
+  }
+  .register-form-select-option-list {
+    bottom: calc(-143px * 768 / 375);
+    width: calc(252px * 768 / 375);
+  }
+  .register-form-select-option-list-item {
+    height: calc(21px * 768 / 375);
+    padding: 0 calc(9px * 768 / 375);
+  }
+  .register-form-error {
+    bottom: calc(-21px * 768 / 375);
+  }
+  .register-form-btn {
+    height: calc(30px * 768 / 375);
+    margin-top: calc(18px * 768 / 375);
+    margin-bottom: calc(8px * 768 / 375);
+  }
+  .container {
+    --bs-gutter-x: calc(3.0rem * 768 / 375) !important;
+  }
+  .row {
+    --bs-gutter-x: calc(3.0rem * 768 / 375) !important;
+  }
+}/*# sourceMappingURL=index.css.map */

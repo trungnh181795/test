@@ -1,0 +1,88 @@
+.standard-title {
+  margin-top: 33px;
+  margin-bottom: 26px;
+}
+.standard-list {
+  margin-top: 26px;
+  margin-bottom: 41px;
+}
+.standard-list .styled-icon#width-80px img {
+  min-width: 50%;
+}
+.standard-list .styled-icon img {
+  max-width: 75%;
+  min-height: 75%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+@media (min-width: 280px) {
+  .standard-title {
+    margin-top: calc(33px * 280 / 375);
+    margin-bottom: calc(26px * 280 / 375);
+  }
+  .standard-list {
+    margin-top: calc(26px * 280 / 375);
+    margin-bottom: calc(41px * 280 / 375);
+  }
+}
+@media (min-width: 320px) {
+  .standard-title {
+    margin-top: calc(33px * 320 / 375);
+    margin-bottom: calc(26px * 320 / 375);
+  }
+  .standard-list {
+    margin-top: calc(26px * 320 / 375);
+    margin-bottom: calc(41px * 320 / 375);
+  }
+}
+@media (min-width: 375px) {
+  .standard-title {
+    margin-top: calc(33px * 375 / 375);
+    margin-bottom: calc(26px * 375 / 375);
+  }
+  .standard-list {
+    margin-top: calc(26px * 375 / 375);
+    margin-bottom: calc(41px * 375 / 375);
+  }
+}
+@media (min-width: 390px) {
+  .standard-title {
+    margin-top: calc(33px * 390 / 375);
+    margin-bottom: calc(26px * 390 / 375);
+  }
+  .standard-list {
+    margin-top: calc(26px * 390 / 375);
+    margin-bottom: calc(41px * 390 / 375);
+  }
+}
+@media (min-width: 412px) {
+  .standard-title {
+    margin-top: calc(33px * 412 / 375);
+    margin-bottom: calc(26px * 412 / 375);
+  }
+  .standard-list {
+    margin-top: calc(26px * 412 / 375);
+    margin-bottom: calc(41px * 412 / 375);
+  }
+}
+@media (min-width: 425px) {
+  .standard-title {
+    margin-top: calc(33px * 425 / 375);
+    margin-bottom: calc(26px * 425 / 375);
+  }
+  .standard-list {
+    margin-top: calc(26px * 425 / 375);
+    margin-bottom: calc(41px * 425 / 375);
+  }
+}
+@media (min-width: 768px) {
+  .standard-title {
+    margin-top: calc(33px * 768 / 375);
+    margin-bottom: calc(26px * 768 / 375);
+  }
+  .standard-list {
+    margin-top: calc(26px * 768 / 375);
+    margin-bottom: calc(41px * 768 / 375);
+  }
+}/*# sourceMappingURL=StandardSection.css.map */

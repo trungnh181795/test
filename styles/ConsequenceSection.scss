@@ -1,0 +1,23 @@
+$breakpoints: 280, 320, 375, 390, 412, 425, 768;
+
+.consequence {
+  padding-bottom: 48px;
+
+  &-title {
+    margin-top: 32px;
+    margin-bottom: 21px;
+  }
+}
+
+@each $breakpoint in $breakpoints {
+  @media (min-width: #{$breakpoint}px) {
+    .consequence {
+      padding-bottom: calc(48px * #{$breakpoint} / 375);
+    
+      &-title {
+        margin-top: calc(32px * #{$breakpoint} / 375);
+        margin-bottom: calc(21px * #{$breakpoint} / 375);
+      }
+    }
+  }
+}

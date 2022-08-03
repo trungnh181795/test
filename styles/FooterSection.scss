@@ -1,0 +1,45 @@
+$breakpoints: 280, 320, 375, 390, 412, 425, 768;
+
+.footer {
+  &-logo {
+    max-width: 160px;
+    max-height: 49px;
+    margin-top: 27px;
+    margin-bottom: 35px;
+
+    img {
+      max-height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &-contact {
+    padding: 0;
+    list-style-type: none;
+    margin: 0;
+  }
+
+  &-info {
+    color: #969c9d;
+    margin-top: 25px;
+    margin-bottom: 106px;
+  }
+}
+
+@each $breakpoint in $breakpoints {
+  @media (min-width: #{$breakpoint}px) {
+    .footer {
+      &-logo {
+        max-width: calc(160px * #{$breakpoint} / 375);
+        max-height: calc(49px * #{$breakpoint} / 375); 
+        margin-top: calc(27px * #{$breakpoint} / 375);
+        margin-bottom: calc(35px * #{$breakpoint} / 375);
+      }
+    
+      &-info {
+        margin-top: calc(25px * #{$breakpoint} / 375);
+        margin-bottom: calc(106px * #{$breakpoint} / 375);
+      }
+    }
+  }
+}

@@ -1,0 +1,47 @@
+$breakpoints: 280, 320, 375, 390, 412, 425, 768;
+
+.standard {
+    &-title {
+        margin-top: 33px;
+        margin-bottom: 26px;
+    }
+
+    &-list {
+        margin-top: 26px;
+        margin-bottom: 41px;
+
+        .styled-icon {
+            &#width-80px {
+              img {
+                min-width: 50%;
+              }
+            }
+          
+            img {
+              max-width: 75%;
+              min-height: 75%;
+              object-fit: contain;
+            }
+          }
+    }
+
+}
+
+@each $breakpoint in $breakpoints {
+    @media (min-width: #{$breakpoint}px) {
+
+        .standard {
+            &-title {
+                margin-top: calc(33px * #{$breakpoint} / 375);
+                margin-bottom: calc(26px * #{$breakpoint} / 375);
+            }
+        
+            &-list {
+                margin-top: calc(26px * #{$breakpoint} / 375);
+                margin-bottom: calc(41px * #{$breakpoint} / 375);
+        
+            }
+        
+        }
+    }
+  }
